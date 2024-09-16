@@ -101,7 +101,6 @@ nav a {
     display: grid;
     grid-template-columns: 3fr 2fr;
     color: var(--dark-grey);
-    padding: 5% 3%;
 }
 
 /* news left */
@@ -109,7 +108,7 @@ nav a {
 .news-left {
     display: flex;
     flex-direction: column;
-    padding-top: 32px;
+    padding: 2%;
 }
 
 .news-left img {
@@ -133,12 +132,10 @@ nav a {
 .news-right {
     display: flex;
     flex-direction: column;
-    padding-top: 32px;
-    padding-left: 24px;
 }
 
 .news-right img {
-    width: auto;
+    width: 10rem;
 }
 
 .news-right h4 {
@@ -151,4 +148,25 @@ nav a {
 }
 .news-right a {
     text-decoration: none;
+}
+
+.orientation, .campus, .lecture {
+    display: flex;
+    border: 1px solid var(--lighter-grey);
+    padding: 2%;
+}
+
+.orientation-info, .campus-info, .lecture-info {
+    padding: 0 5%;
+    margin-top: 4%;
+    font-size: 80%;
+}
+
+.orientation-info > *, .campus-info > *, .lecture-info > * {
+    padding: 2% 0;
+}
+
+.lecture {
+    background-color: var(--lighter-grey);
+    margin: 0 0 2% 0;
 }
